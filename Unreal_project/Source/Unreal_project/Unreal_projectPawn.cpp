@@ -202,7 +202,15 @@ void AUnreal_projectPawn::Tick(float Delta)
                             DoHandbrakeStop();
                         }
                     }
-                }
+					else if (Command == TEXT("coffe"))
+					{
+						AudioCoffeDetected();
+					}
+					else if (Command == TEXT("chair"))	
+					{
+						AudioChairDetected();
+					}
+				}
             }
         }
     }
